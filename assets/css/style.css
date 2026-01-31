@@ -104,14 +104,14 @@ img {
 }
 
 /* header section start */
-.main-header .container {
+.header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
 }
 
-.main-header {
+.header {
   background-color: #ffffff;
   padding: 20px 0;
   box-shadow: var(--shadow);

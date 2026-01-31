@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', function () {
     // 2. Hero Slider (Autoplay Enabled)
     const swiper = new Swiper('.hero-slider', {
         loop: true,
-        autoplay: {
-            delay: 4500,
-            disableOnInteraction: false,
-        },
+        // autoplay: {
+        //     delay: 4500,
+        //     disableOnInteraction: false,
+        // },
         speed: 1000,
         pagination: {
             el: '.swiper-pagination',
@@ -26,10 +26,21 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     // 3. Testimonial Slider
-    const testimonialSwiper = new Swiper('.testimonial-swiper', {
+    const testimonial = new Swiper('.testimonial-swiper', {
         loop: true,
-        autoplay: { delay: 3000 },
-        pagination: { el: '.swiper-pagination' },
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoplay: {
+            delay: 3000,
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        breakpoints: {
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 }
+        }
     });
 
     // 4. Close menu when clicking links (Mobile fix)

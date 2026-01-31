@@ -16,21 +16,18 @@
   </head>
   <body>
     <div class="top-bar">
-      <p>🎉 Free Delivery on orders over $150! | Call: +880 1234 567 890</p>
+      <p>🎉 Free Delivery on orders over 500tk | Call: +880 1234 567 890</p>
     </div>
-
-    <header class="main-header">
-      <div class="container header-flex">
+    <header class="header">
+      <div class="container">
         <div class="logo">
           <a href="index.html">
             <img src="./../assets/images/logo.png" alt="logo" />
           </a>
         </div>
-
         <button type="button" class="menu-toggle" id="mobile-menu">
           <i class="fas fa-bars"></i>
         </button>
-
         <nav class="navbar">
           <ul>
             <li><a href="index.html" class="active">Home</a></li>
@@ -60,12 +57,12 @@
               <p>
                 Experience the future on your wrist. 30% off for today only.
               </p>
-              <a href="#" class="shop-btn"
+              <a href="#" class="btn"
                 >Shop Now <i class="fas fa-arrow-right"></i
               ></a>
             </div>
             <div class="img-box">
-              <img src="https://i.imgur.com/xdbHo4E.png" alt="Product" />
+              <img src="../assets/images/product1.png" alt="Product" />
             </div>
           </div>
         </div>
@@ -75,12 +72,12 @@
               <span class="tag">Exclusive Deal</span>
               <h1>Premium Sound <br /><span>Audio Max XL</span></h1>
               <p>Pure sound, no wires. High-fidelity audio for music lovers.</p>
-              <a href="#" class="shop-btn"
-                >Explore Now <i class="fas fa-arrow-right"></i
+              <a href="#" class="btn"
+                >Shop Now <i class="fas fa-arrow-right"></i
               ></a>
             </div>
             <div class="img-box">
-              <img src="https://i.imgur.com/xdbHo4E.png" alt="Product" />
+              <img src="../assets/images/product2.png" alt="Product" />
             </div>
           </div>
         </div>
@@ -89,26 +86,28 @@
     </section>
 
     <section class="services-section">
-      <div class="container service-grid">
-        <div class="service-card">
-          <i class="fas fa-truck-fast"></i>
-          <div>
-            <h4>Free Shipping</h4>
-            <p>On all orders over $150</p>
+      <div class="container">
+        <div class="service-grid">
+          <div class="service-card">
+            <i class="fas fa-truck-fast"></i>
+            <div>
+              <h5>Free Shipping</h5>
+              <p>On all orders over $150</p>
+            </div>
           </div>
-        </div>
-        <div class="service-card">
-          <i class="fas fa-shield-halved"></i>
-          <div>
-            <h4>Secure Payment</h4>
-            <p>100% secure checkout</p>
+          <div class="service-card">
+            <i class="fas fa-shield-halved"></i>
+            <div>
+              <h5>Secure Payment</h5>
+              <p>100% secure checkout</p>
+            </div>
           </div>
-        </div>
-        <div class="service-card">
-          <i class="fas fa-rotate-left"></i>
-          <div>
-            <h4>Easy Returns</h4>
-            <p>10 days money back</p>
+          <div class="service-card">
+            <i class="fas fa-rotate-left"></i>
+            <div>
+              <h5>Easy Returns</h5>
+              <p>10 days money back</p>
+            </div>
           </div>
         </div>
       </div>
@@ -128,7 +127,7 @@
                 alt="Fashion"
               />
             </div>
-            <h4>Fashion</h4>
+            <h5>Fashion</h5>
             <span class="count">120+ Items</span>
           </a>
           <a href="#" class="cat-item">
@@ -138,7 +137,7 @@
                 alt="Electronics"
               />
             </div>
-            <h4>Electronics</h4>
+            <h5>Electronics</h5>
             <span class="count">85+ Items</span>
           </a>
           <a href="#" class="cat-item">
@@ -148,7 +147,7 @@
                 alt="Home"
               />
             </div>
-            <h4>Home Decor</h4>
+            <h5>Home Decor</h5>
             <span class="count">50+ Items</span>
           </a>
           <a href="#" class="cat-item">
@@ -158,7 +157,7 @@
                 alt="Beauty"
               />
             </div>
-            <h4>Beauty</h4>
+            <h5>Beauty</h5>
             <span class="count">200+ Items</span>
           </a>
         </div>
@@ -166,16 +165,18 @@
     </section>
 
     <section id="deals" class="flash-sale-section">
-      <div class="container flash-bg">
-        <div class="flash-content">
-          <h2>Flash Sale! <span>50% OFF</span></h2>
-          <p>Limited time offer. Don't miss out on your favorite gadgets.</p>
-          <div id="countdown">
-            <span>05 <small>Hrs</small></span> :
-            <span>42 <small>Min</small></span> :
-            <span>18 <small>Sec</small></span>
+      <div class="container">
+        <div class="flash-bg">
+          <div class="flash-content">
+            <h2>Flash Sale! <span>50% OFF</span></h2>
+            <p>Limited time offer. Don't miss out on your favorite gadgets.</p>
+            <div id="countdown" class="countdown">
+              <span>05 <small>Hrs</small></span> :
+              <span>42 <small>Min</small></span> :
+              <span>18 <small>Sec</small></span>
+            </div>
+            <a href="#" class="shop-btn">Grab Deals</a>
           </div>
-          <a href="#" class="shop-btn">Grab Deals</a>
         </div>
       </div>
     </section>
@@ -183,41 +184,61 @@
     <section id="products" class="product-section">
       <div class="container">
         <div class="section-title">
+          <span class="sub-title">Modern Gadgets</span>
           <h2>Trending Products</h2>
           <div class="title-underline"></div>
         </div>
         <div class="product-grid">
           <div class="product-card">
-            <div class="product-badge">Hot</div>
+            <div class="product-badge hot">Hot</div>
             <div class="product-tumb">
-              <img src="https://i.imgur.com/xdbHo4E.png" alt="Mouse" />
+              <img src="../assets/images/product1.png" alt="Mouse" />
+              <div class="product-overlay">
+                <button type="button" title="Add to Wishlist">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button type="button" title="Quick View">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
             </div>
             <div class="product-details">
               <span class="product-catagory">Gadgets</span>
               <h4><a href="#">Logitech G-Series Mouse</a></h4>
+              <p class="product-short-desc">Pro-grade wireless performance.</p>
               <div class="product-bottom-details">
                 <div class="product-price"><small>$99</small> $75</div>
-                <div class="product-links">
-                  <a href="#"><i class="fa fa-heart"></i></a>
-                  <a href="#"><i class="fa fa-shopping-basket"></i></a>
-                </div>
+                <button class="add-to-cart-btn">
+                  <i class="fas fa-shopping-basket"></i> Add
+                </button>
               </div>
             </div>
           </div>
+
           <div class="product-card">
-            <div class="product-badge">New</div>
+            <div class="product-badge new">New</div>
             <div class="product-tumb">
-              <img src="https://i.imgur.com/xdbHo4E.png" alt="Watch" />
+              <img src="../assets/images/product2.png" alt="Watch" />
+              <div class="product-overlay">
+                <button type="button" title="Add to Wishlist">
+                  <i class="far fa-heart"></i>
+                </button>
+                <button type="button" title="Quick View">
+                  <i class="fas fa-eye"></i>
+                </button>
+              </div>
             </div>
             <div class="product-details">
               <span class="product-catagory">Accessories</span>
               <h4><a href="#">Apple Watch Clone 8</a></h4>
+              <p class="product-short-desc">
+                Health tracking & amoled display.
+              </p>
               <div class="product-bottom-details">
                 <div class="product-price">$45</div>
-                <div class="product-links">
-                  <a href="#"><i class="fa fa-heart"></i></a>
-                  <a href="#"><i class="fa fa-shopping-basket"></i></a>
-                </div>
+                <button class="add-to-cart-btn">
+                  <i class="fas fa-shopping-basket"></i> Add
+                </button>
               </div>
             </div>
           </div>
@@ -226,44 +247,27 @@
     </section>
 
     <section class="testimonial-section">
-      <div class="bg-shape shape-1"></div>
-      <div class="bg-shape shape-2"></div>
-
       <div class="container">
         <div class="section-title">
-          <span class="sub-title">Customer Stories</span>
           <h2>What Our Clients Say</h2>
-          <div class="title-underline"></div>
         </div>
 
-        <div class="testimonial-swiper swiper">
+        <div class="swiper testimonial-swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="t-card">
-                <div class="quote-top"><i class="fas fa-quote-right"></i></div>
-                <div class="stars">
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i>
+                <div class="user-img-box">
+                  <img src="https://i.pravatar.cc/150?u=11" alt="User" />
                 </div>
-                <p>
-                  "MashaAllah Enterprise theke watch ta niyechi, quality ekdom
-                  top-notch! Packaging ar delivery speed dekhe ami obak. Best
-                  service in town!"
-                </p>
-                <div class="user-profile">
-                  <div class="user-img">
-                    <img
-                      src="https://ui-avatars.com/api/?name=Rafiqul+Islam&background=ff4d4d&color=fff"
-                      alt="User"
-                    />
-                    <div class="check-icon">
-                      <i class="fas fa-check-circle"></i>
-                    </div>
-                  </div>
-                  <div class="user-meta">
-                    <h5>Rafiqul Islam</h5>
-                    <p>Verified Buyer</p>
+                <div class="t-content">
+                  <i class="fas fa-quote-left quote-icon"></i>
+                  <p>
+                    MashaAllah Enterprise-er product quality niye kono kotha
+                    hobe na. Delivery khub druto peyechi.
+                  </p>
+                  <div class="user-info">
+                    <h4>Avinash Kr</h4>
+                    <span>Co-Founder at XYZ</span>
                   </div>
                 </div>
               </div>
@@ -271,30 +275,37 @@
 
             <div class="swiper-slide">
               <div class="t-card">
-                <div class="quote-top"><i class="fas fa-quote-right"></i></div>
-                <div class="stars">
-                  <i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
-                  ><i class="fas fa-star"></i>
+                <div class="user-img-box">
+                  <img src="https://i.pravatar.cc/150?u=12" alt="User" />
                 </div>
-                <p>
-                  "Product order korar por khub druto hate peyechi. Gadget gulo
-                  original ar price-o onno shop er cheye bhalo. InshaAllah abar
-                  nibo."
-                </p>
-                <div class="user-profile">
-                  <div class="user-img">
-                    <img
-                      src="https://ui-avatars.com/api/?name=Sumaiya+Khan&background=1a1a1a&color=fff"
-                      alt="User"
-                    />
-                    <div class="check-icon">
-                      <i class="fas fa-check-circle"></i>
-                    </div>
+                <div class="t-content">
+                  <i class="fas fa-quote-left quote-icon"></i>
+                  <p>
+                    Gadget gulo original ar service khub bhalo. Ami pray ekhane
+                    theke order kori.
+                  </p>
+                  <div class="user-info">
+                    <h4>Bharat Kunal</h4>
+                    <span>Manager at XYZ</span>
                   </div>
-                  <div class="user-meta">
-                    <h5>Sumaiya Khan</h5>
-                    <p>Regular Customer</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="t-card">
+                <div class="user-img-box">
+                  <img src="https://i.pravatar.cc/150?u=13" alt="User" />
+                </div>
+                <div class="t-content">
+                  <i class="fas fa-quote-left quote-icon"></i>
+                  <p>
+                    Customer support team khub friendly. Product price-o khub
+                    bhalo.
+                  </p>
+                  <div class="user-info">
+                    <h4>Prabhakar D</h4>
+                    <span>Founder / CEO at XYZ</span>
                   </div>
                 </div>
               </div>
