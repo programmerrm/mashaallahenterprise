@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MashaAllah Enterprise | Premium Ecommerce</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      <p>🎉 Free Delivery on orders over $150! | Call: +880 1234 567 890</p>
+    </div>
+
+    <header class="main-header">
+      <div class="container header-flex">
+        <div class="logo">
+          <a href="index.html">
+            <img src="./../assets/images/logo.png" alt="logo" />
+          </a>
+        </div>
+
+        <button type="button" class="menu-toggle" id="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#products">Products</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#"><i class="fas fa-search"></i></a>
+          <div class="cart-icon">
+            <a href="#">
+              <i class="fas fa-shopping-cart"></i> <span class="badge">3</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero-slider swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide hero-slide">
+          <div class="container slide-content">
+            <div class="text-box">
+              <span class="tag">New Arrival</span>
+              <h1>Modern Smart <br /><span>Ultra Series 7</span></h1>
+              <p>
+                Experience the future on your wrist. 30% off for today only.
+              </p>
+              <a href="#" class="shop-btn"
+                >Shop Now <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="img-box">
+              <img src="https://i.imgur.com/xdbHo4E.png" alt="Product" />
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide hero-slide">
+          <div class="container slide-content">
+            <div class="text-box">
+              <span class="tag">Exclusive Deal</span>
+              <h1>Premium Sound <br /><span>Audio Max XL</span></h1>
+              <p>Pure sound, no wires. High-fidelity audio for music lovers.</p>
+              <a href="#" class="shop-btn"
+                >Explore Now <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+            <div class="img-box">
+              <img src="https://i.imgur.com/xdbHo4E.png" alt="Product" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </section>
+
+    <section class="services-section">
+      <div class="container service-grid">
+        <div class="service-card">
+          <i class="fas fa-truck-fast"></i>
+          <div>
+            <h4>Free Shipping</h4>
+            <p>On all orders over $150</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-shield-halved"></i>
+          <div>
+            <h4>Secure Payment</h4>
+            <p>100% secure checkout</p>
+          </div>
+        </div>
+        <div class="service-card">
+          <i class="fas fa-rotate-left"></i>
+          <div>
+            <h4>Easy Returns</h4>
+            <p>10 days money back</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="categories" class="categories-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Explore Categories</h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="category-grid">
+          <a href="#" class="cat-item">
+            <div class="cat-icon-box">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3050/3050239.png"
+                alt="Fashion"
+              />
+            </div>
+            <h4>Fashion</h4>
+            <span class="count">120+ Items</span>
+          </a>
+          <a href="#" class="cat-item">
+            <div class="cat-icon-box">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3659/3659899.png"
+                alt="Electronics"
+              />
+            </div>
+            <h4>Electronics</h4>
+            <span class="count">85+ Items</span>
+          </a>
+          <a href="#" class="cat-item">
+            <div class="cat-icon-box">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/10633/10633100.png"
+                alt="Home"
+              />
+            </div>
+            <h4>Home Decor</h4>
+            <span class="count">50+ Items</span>
+          </a>
+          <a href="#" class="cat-item">
+            <div class="cat-icon-box">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/3163/3163195.png"
+                alt="Beauty"
+              />
+            </div>
+            <h4>Beauty</h4>
+            <span class="count">200+ Items</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="deals" class="flash-sale-section">
+      <div class="container flash-bg">
+        <div class="flash-content">
+          <h2>Flash Sale! <span>50% OFF</span></h2>
+          <p>Limited time offer. Don't miss out on your favorite gadgets.</p>
+          <div id="countdown">
+            <span>05 <small>Hrs</small></span> :
+            <span>42 <small>Min</small></span> :
+            <span>18 <small>Sec</small></span>
+          </div>
+          <a href="#" class="shop-btn">Grab Deals</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="product-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Trending Products</h2>
+          <div class="title-underline"></div>
+        </div>
+        <div class="product-grid">
+          <div class="product-card">
+            <div class="product-badge">Hot</div>
+            <div class="product-tumb">
+              <img src="https://i.imgur.com/xdbHo4E.png" alt="Mouse" />
+            </div>
+            <div class="product-details">
+              <span class="product-catagory">Gadgets</span>
+              <h4><a href="#">Logitech G-Series Mouse</a></h4>
+              <div class="product-bottom-details">
+                <div class="product-price"><small>$99</small> $75</div>
+                <div class="product-links">
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                  <a href="#"><i class="fa fa-shopping-basket"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-badge">New</div>
+            <div class="product-tumb">
+              <img src="https://i.imgur.com/xdbHo4E.png" alt="Watch" />
+            </div>
+            <div class="product-details">
+              <span class="product-catagory">Accessories</span>
+              <h4><a href="#">Apple Watch Clone 8</a></h4>
+              <div class="product-bottom-details">
+                <div class="product-price">$45</div>
+                <div class="product-links">
+                  <a href="#"><i class="fa fa-heart"></i></a>
+                  <a href="#"><i class="fa fa-shopping-basket"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonial-section">
+      <div class="bg-shape shape-1"></div>
+      <div class="bg-shape shape-2"></div>
+
+      <div class="container">
+        <div class="section-title">
+          <span class="sub-title">Customer Stories</span>
+          <h2>What Our Clients Say</h2>
+          <div class="title-underline"></div>
+        </div>
+
+        <div class="testimonial-swiper swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="t-card">
+                <div class="quote-top"><i class="fas fa-quote-right"></i></div>
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p>
+                  "MashaAllah Enterprise theke watch ta niyechi, quality ekdom
+                  top-notch! Packaging ar delivery speed dekhe ami obak. Best
+                  service in town!"
+                </p>
+                <div class="user-profile">
+                  <div class="user-img">
+                    <img
+                      src="https://ui-avatars.com/api/?name=Rafiqul+Islam&background=ff4d4d&color=fff"
+                      alt="User"
+                    />
+                    <div class="check-icon">
+                      <i class="fas fa-check-circle"></i>
+                    </div>
+                  </div>
+                  <div class="user-meta">
+                    <h5>Rafiqul Islam</h5>
+                    <p>Verified Buyer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="t-card">
+                <div class="quote-top"><i class="fas fa-quote-right"></i></div>
+                <div class="stars">
+                  <i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i><i class="fas fa-star"></i
+                  ><i class="fas fa-star"></i>
+                </div>
+                <p>
+                  "Product order korar por khub druto hate peyechi. Gadget gulo
+                  original ar price-o onno shop er cheye bhalo. InshaAllah abar
+                  nibo."
+                </p>
+                <div class="user-profile">
+                  <div class="user-img">
+                    <img
+                      src="https://ui-avatars.com/api/?name=Sumaiya+Khan&background=1a1a1a&color=fff"
+                      alt="User"
+                    />
+                    <div class="check-icon">
+                      <i class="fas fa-check-circle"></i>
+                    </div>
+                  </div>
+                  <div class="user-meta">
+                    <h5>Sumaiya Khan</h5>
+                    <p>Regular Customer</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-row">
+          <div class="footer-col">
+            <h4>MashaAllah<span>Enterprise</span></h4>
+            <p>
+              Apnar nityo-proyojoniyo shob kichu paben eki jaygay. Quality ar
+              bhorosai amader mul lokkho.
+            </p>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Newsletter</h4>
+            <p>Get the latest updates and offers.</p>
+            <div class="newsletter-form">
+              <input type="email" placeholder="Your Email" />
+              <button type="submit">Join</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 MashaAllah Enterprise | Developed by ❤️</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
