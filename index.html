@@ -3,27 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home || mashaallahenterprise</title>
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <title>MashaAllah Enterprise | Premium Ecommerce</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <!-- header section start -->
+    <div class="top-bar">
+      <div class="container">
+        <p>🎉 Free Delivery on orders over 500tk | Call: +880 1234 567 890</p>
+      </div>
+    </div>
     <header class="header">
       <div class="container">
         <div class="logo">
           <a href="index.html">
-            <img src="./assets/images/logo.png" alt="logo" />
+            <img src="./../assets/images/logo.png" alt="logo" />
           </a>
         </div>
-        <div class="nav-menu">
-          <nav class="navbar">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#">Categories</a></li>
-              <li><a href="#">Products</a></li>
-            </ul>
-          </nav>
+        <button type="button" class="menu-toggle" id="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="#categories">Categories</a></li>
+            <li><a href="#products">Products</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#"><i class="fas fa-search"></i></a>
           <div class="cart-icon">
             <a href="#">
               <i class="fas fa-shopping-cart"></i> <span class="badge">3</span>
@@ -32,87 +48,78 @@
         </div>
       </div>
     </header>
-    <!-- header section end -->
-    <!-- hero section start -->
+
     <section class="hero-slider swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide hero-slide">
           <div class="container slide-content">
             <div class="text-box">
               <span class="tag">New Arrival</span>
-              <h1>Smart Watch <br /><span>Ultra Series 7</span></h1>
-              <p>Experience the future on your wrist. 30% off for today.</p>
-              <a href="#" class="btn btn-primary">Buy Now</a>
+              <h2 class="h1">Modern Smart <br /><span>Ultra Series 7</span></h2>
+              <p>
+                Experience the future on your wrist. 30% off for today only.
+              </p>
+              <a href="#" class="btn"
+                >Shop Now <i class="fas fa-arrow-right"></i
+              ></a>
             </div>
             <div class="img-box">
-              <img src="product-1.png" alt="Product 1" />
+              <img src="../assets/images/product1.png" alt="Product" />
             </div>
           </div>
         </div>
         <div class="swiper-slide hero-slide">
           <div class="container slide-content">
             <div class="text-box">
-              <span class="tag">Flash Sale</span>
-              <h1>Wireless <br /><span>Headphones XL</span></h1>
-              <p>Pure sound, no wires. Premium quality audio gear.</p>
-              <a href="#" class="shop-btn">Buy Now</a>
+              <span class="tag">Exclusive Deal</span>
+              <h2 class="h1">Premium Sound <br /><span>Audio Max XL</span></h2>
+              <p>Pure sound, no wires. High-fidelity audio for music lovers.</p>
+              <a href="#" class="btn"
+                >Shop Now <i class="fas fa-arrow-right"></i
+              ></a>
             </div>
             <div class="img-box">
-              <img src="product-2.png" alt="Product 2" />
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide hero-slide">
-          <div class="container slide-content">
-            <div class="text-box">
-              <span class="tag">Flash Sale</span>
-              <h1>Wireless <br /><span>Headphones XL</span></h1>
-              <p>Pure sound, no wires. Premium quality audio gear.</p>
-              <a href="#" class="shop-btn">Buy Now</a>
-            </div>
-            <div class="img-box">
-              <img src="product-2.png" alt="Product 2" />
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide hero-slide">
-          <div class="container slide-content">
-            <div class="text-box">
-              <span class="tag">Flash Sale</span>
-              <h1>Wireless <br /><span>Headphones XL</span></h1>
-              <p>Pure sound, no wires. Premium quality audio gear.</p>
-              <a href="#" class="shop-btn">Buy Now</a>
-            </div>
-            <div class="img-box">
-              <img src="product-2.png" alt="Product 2" />
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide hero-slide">
-          <div class="container slide-content">
-            <div class="text-box">
-              <span class="tag">Flash Sale</span>
-              <h1>Wireless <br /><span>Headphones XL</span></h1>
-              <p>Pure sound, no wires. Premium quality audio gear.</p>
-              <a href="#" class="shop-btn">Buy Now</a>
-            </div>
-            <div class="img-box">
-              <img src="product-2.png" alt="Product 2" />
+              <img src="../assets/images/product2.png" alt="Product" />
             </div>
           </div>
         </div>
       </div>
       <div class="swiper-pagination"></div>
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
     </section>
-    <!-- hero section end -->
-    <!-- category section start -->
-    <section class="categories-section">
+
+    <section class="services-section">
+      <div class="container">
+        <div class="service-grid">
+          <div class="service-card">
+            <i class="fas fa-truck-fast"></i>
+            <div>
+              <h5>Free Shipping</h5>
+              <p>On all orders over $150</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-shield-halved"></i>
+            <div>
+              <h5>Secure Payment</h5>
+              <p>100% secure checkout</p>
+            </div>
+          </div>
+          <div class="service-card">
+            <i class="fas fa-rotate-left"></i>
+            <div>
+              <h5>Easy Returns</h5>
+              <p>10 days money back</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="categories" class="categories-section">
       <div class="container">
         <div class="section-title">
-          <h2>Shop by Categories</h2>
-          <p>Select your favorite category and start shopping</p>
+          <h2>Explore Categories</h2>
+          <div class="title-underline"></div>
         </div>
         <div class="category-grid">
           <a href="#" class="cat-item">
@@ -122,10 +129,9 @@
                 alt="Fashion"
               />
             </div>
-            <h4>Fashion</h4>
-            <p>120+ Products</p>
+            <h5>Fashion</h5>
+            <span class="count">120+ Items</span>
           </a>
-
           <a href="#" class="cat-item">
             <div class="cat-icon-box">
               <img
@@ -133,21 +139,19 @@
                 alt="Electronics"
               />
             </div>
-            <h4>Electronics</h4>
-            <p>85+ Products</p>
+            <h5>Electronics</h5>
+            <span class="count">85+ Items</span>
           </a>
-
           <a href="#" class="cat-item">
             <div class="cat-icon-box">
               <img
                 src="https://cdn-icons-png.flaticon.com/512/10633/10633100.png"
-                alt="Home Decor"
+                alt="Home"
               />
             </div>
-            <h4>Home Decor</h4>
-            <p>50+ Products</p>
+            <h5>Home Decor</h5>
+            <span class="count">50+ Items</span>
           </a>
-
           <a href="#" class="cat-item">
             <div class="cat-icon-box">
               <img
@@ -155,99 +159,184 @@
                 alt="Beauty"
               />
             </div>
-            <h4>Beauty</h4>
-            <p>200+ Products</p>
+            <h5>Beauty</h5>
+            <span class="count">200+ Items</span>
           </a>
         </div>
       </div>
-    </section>
-    <!-- category section end -->
-    <!-- product card section start -->
-    <section class="product-section">
+    </section> -->
+    <div class="category">
+      <section class="category-grid-section">
+        <div class="container">
+          <div class="category-wrapper">
+            <div class="category-item">
+              <div class="category-icon">
+                <i class="fas fa-carrot"></i>
+              </div>
+              <h5>Fresh Vegetables</h5>
+              <p>Farm fresh organic products</p>
+              <a href="#" class="category-link"
+                >Shop Now <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+
+            <div class="category-item">
+              <div class="category-icon">
+                <i class="fas fa-apple-alt"></i>
+              </div>
+              <h5>Fresh Fruits</h5>
+              <p>Imported and local fruits</p>
+              <a href="#" class="category-link"
+                >Shop Now <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+
+            <div class="category-item">
+              <div class="category-icon">
+                <i class="fas fa-fish"></i>
+              </div>
+              <h5>Fish & Meat</h5>
+              <p>Fresh and frozen items</p>
+              <a href="#" class="category-link"
+                >Shop Now <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+
+            <div class="category-item">
+              <div class="category-icon">
+                <i class="fas fa-cookie"></i>
+              </div>
+              <h5>Snacks</h5>
+              <p>Crispy and healthy snacks</p>
+              <a href="#" class="category-link"
+                >Shop Now <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section id="products" class="product-section">
       <div class="container">
+        <div class="section-title">
+          <span class="sub-title">Modern Gadgets</span>
+          <h2>Trending Products</h2>
+          <div class="title-underline"></div>
+        </div>
         <div class="product-grid">
           <div class="product-card">
-            <div class="product-badge">Hot</div>
             <div class="product-tumb">
-              <img src="https://i.imgur.com/xdbHo4E.png" alt="Product Image" />
+              <img src="../assets/images/product1.png" alt="Mouse" />
             </div>
             <div class="product-details">
               <span class="product-catagory">Gadgets</span>
-              <h4><a href="">Logitech G-Series Mouse</a></h4>
-              <p>Premium wireless gaming mouse with high precision sensor.</p>
+              <h4><a href="#">Logitech G-Series Mouse</a></h4>
+              <p class="product-short-desc">Pro-grade wireless performance.</p>
               <div class="product-bottom-details">
-                <div class="product-price"><small>$99.00</small>$75.00</div>
-                <div class="product-links">
-                  <a href=""><i class="fa fa-heart"></i></a>
-                  <a href=""><i class="fa fa-shopping-cart"></i></a>
-                </div>
+                <div class="product-price"><small>$99</small> $75</div>
+                <button class="add-to-cart-btn">
+                  <i class="fas fa-shopping-basket"></i> Add
+                </button>
               </div>
             </div>
           </div>
           <div class="product-card">
-            <div class="product-badge">Hot</div>
             <div class="product-tumb">
-              <img src="https://i.imgur.com/xdbHo4E.png" alt="Product Image" />
+              <img src="../assets/images/product2.png" alt="Watch" />
             </div>
             <div class="product-details">
-              <span class="product-catagory">Gadgets</span>
-              <h4><a href="">Logitech G-Series Mouse</a></h4>
-              <p>Premium wireless gaming mouse with high precision sensor.</p>
+              <span class="product-catagory">Accessories</span>
+              <h4><a href="#">Apple Watch Clone 8</a></h4>
+              <p class="product-short-desc">
+                Health tracking & amoled display.
+              </p>
               <div class="product-bottom-details">
-                <div class="product-price"><small>$99.00</small>$75.00</div>
-                <div class="product-links">
-                  <a href=""><i class="fa fa-heart"></i></a>
-                  <a href=""><i class="fa fa-shopping-cart"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-badge">Hot</div>
-            <div class="product-tumb">
-              <img src="https://i.imgur.com/xdbHo4E.png" alt="Product Image" />
-            </div>
-            <div class="product-details">
-              <span class="product-catagory">Gadgets</span>
-              <h4><a href="">Logitech G-Series Mouse</a></h4>
-              <p>Premium wireless gaming mouse with high precision sensor.</p>
-              <div class="product-bottom-details">
-                <div class="product-price"><small>$99.00</small>$75.00</div>
-                <div class="product-links">
-                  <a href=""><i class="fa fa-heart"></i></a>
-                  <a href=""><i class="fa fa-shopping-cart"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="product-card">
-            <div class="product-badge">Hot</div>
-            <div class="product-tumb">
-              <img src="https://i.imgur.com/xdbHo4E.png" alt="Product Image" />
-            </div>
-            <div class="product-details">
-              <span class="product-catagory">Gadgets</span>
-              <h4><a href="">Logitech G-Series Mouse</a></h4>
-              <p>Premium wireless gaming mouse with high precision sensor.</p>
-              <div class="product-bottom-details">
-                <div class="product-price"><small>$99.00</small>$75.00</div>
-                <div class="product-links">
-                  <a href=""><i class="fa fa-heart"></i></a>
-                  <a href=""><i class="fa fa-shopping-cart"></i></a>
-                </div>
+                <div class="product-price">$45</div>
+                <button class="add-to-cart-btn">
+                  <i class="fas fa-shopping-basket"></i> Add
+                </button>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- product card section end -->
-    <!-- footer section start -->
+
+    <section class="testimonial-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>What Our Clients Say</h2>
+        </div>
+
+        <div class="swiper testimonial-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="t-card">
+                <div class="user-img-box">
+                  <img src="https://i.pravatar.cc/150?u=11" alt="User" />
+                </div>
+                <div class="t-content">
+                  <i class="fas fa-quote-left quote-icon"></i>
+                  <p>
+                    MashaAllah Enterprise-er product quality niye kono kotha
+                    hobe na. Delivery khub druto peyechi.
+                  </p>
+                  <div class="user-info">
+                    <h4>Avinash Kr</h4>
+                    <span>Co-Founder at XYZ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="t-card">
+                <div class="user-img-box">
+                  <img src="https://i.pravatar.cc/150?u=12" alt="User" />
+                </div>
+                <div class="t-content">
+                  <i class="fas fa-quote-left quote-icon"></i>
+                  <p>
+                    Gadget gulo original ar service khub bhalo. Ami pray ekhane
+                    theke order kori.
+                  </p>
+                  <div class="user-info">
+                    <h4>Bharat Kunal</h4>
+                    <span>Manager at XYZ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="t-card">
+                <div class="user-img-box">
+                  <img src="https://i.pravatar.cc/150?u=13" alt="User" />
+                </div>
+                <div class="t-content">
+                  <i class="fas fa-quote-left quote-icon"></i>
+                  <p>
+                    Customer support team khub friendly. Product price-o khub
+                    bhalo.
+                  </p>
+                  <div class="user-info">
+                    <h4>Prabhakar D</h4>
+                    <span>Founder / CEO at XYZ</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="container">
         <div class="footer-row">
           <div class="footer-col">
-            <h4>Shop<span>Ease</span></h4>
+            <h4>MashaAllah<span>Enterprise</span></h4>
             <p>
               Apnar nityo-proyojoniyo shob kichu paben eki jaygay. Quality ar
               bhorosai amader mul lokkho.
@@ -255,49 +344,34 @@
             <div class="social-links">
               <a href="#"><i class="fab fa-facebook-f"></i></a>
               <a href="#"><i class="fab fa-instagram"></i></a>
-              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
           </div>
-
           <div class="footer-col">
             <h4>Quick Links</h4>
             <ul>
               <li><a href="#">About Us</a></li>
-              <li><a href="#">Our Services</a></li>
               <li><a href="#">Privacy Policy</a></li>
-              <li><a href="#">Affiliate Program</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Terms of Service</a></li>
             </ul>
           </div>
-
-          <div class="footer-col">
-            <h4>Get Help</h4>
-            <ul>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Shipping</a></li>
-              <li><a href="#">Returns</a></li>
-              <li><a href="#">Order Status</a></li>
-              <li><a href="#">Payment Options</a></li>
-            </ul>
-          </div>
-
           <div class="footer-col">
             <h4>Newsletter</h4>
+            <p>Get the latest updates and offers.</p>
             <div class="newsletter-form">
-              <input name="email" type="email" placeholder="Enter your email" />
+              <input type="email" placeholder="Your Email" />
               <button type="submit">Join</button>
             </div>
-            <p class="payment-icons">
-              <small>We Accept: Visa, Mastercard, Bkash, Nagad</small>
-            </p>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2026 mashaallahenterprise - All Rights Reserved | Developed with ❤️</p>
+        <p>&copy; 2026 MashaAllah Enterprise | Developed by ❤️</p>
       </div>
     </footer>
-    <!-- footer section end -->
-    <script src="./assets/js/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
   </body>
 </html>
