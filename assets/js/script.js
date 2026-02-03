@@ -125,8 +125,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let navtl = gsap.timeline();
 
     let smoother = ScrollSmoother.create({
-        wrapper: "#smooth-wrapper",
-        content: "#smooth-content",
+        wrapper: ".smooth-wrapper",
+        content: ".smooth-content",
         smooth: 5,
         effects: true,
         smoothTouch: 0.1,
@@ -184,6 +184,32 @@ document.addEventListener("DOMContentLoaded", function () {
             delay: 0.2,
         },
     );
+    gsap.fromTo(
+        ".category .page-header",
+        {
+            y: 50,
+            opacity: 0,
+        },
+        {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            delay: 0.2,
+        },
+    );
+    gsap.fromTo(
+        ".category-page .category-item",
+        {
+            y: 50,
+            opacity: 0,
+        },
+        {
+            y: 0,
+            opacity: 1,
+            duration: 1,
+            delay: 0.2,
+        },
+    );
     gsap.from(".category-item", {
         scrollTrigger: {
             trigger: ".category",
@@ -212,14 +238,31 @@ document.addEventListener("DOMContentLoaded", function () {
     gsap.from(".product-card", {
         scrollTrigger: {
             trigger: ".product-grid",
-            start: "top 85%",
+            start: "top 65%",
             end: "bottom 40%",
             scrub: 1,
             once: true,
+            // toggleActions: "play none none none",
         },
         y: 100,
         opacity: 0,
-        stagger: 0.5,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power2.out",
+    });
+    gsap.from(".product-page .product-card", {
+        scrollTrigger: {
+            trigger: ".product-grid",
+            start: "top 65%",
+            end: "bottom 20%",
+            // scrub: 1,
+            once: true,
+            toggleActions: "play none none none",
+        },
+        y: 100,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2,
         ease: "power2.out",
     });
     gsap.from(".testimonial-section .section-title", {
@@ -285,5 +328,4 @@ document.addEventListener("DOMContentLoaded", function () {
         delay: 0.8,
         ease: "power2.out"
     });
-
 });

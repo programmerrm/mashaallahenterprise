@@ -6,48 +6,56 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MashaAllah Enterprise || Category</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-  <link rel="stylesheet" href="./assets/css/category.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-  <div id="smooth-wrapper">
-    <div id="smooth-content">
+  <div class="smooth-wrapper">
+    <div class="smooth-content">
       <div class="top-bar">
-        <div class="container">
-          <p>
-            🎉 Free Delivery on orders over 500tk | Call: +880 1234 567 890
-          </p>
-        </div>
-      </div>
-      <header class="header">
-        <div class="container">
-          <div class="logo">
-            <a href="index.html">
-              <img src="./../assets/images/logo.png" alt="logo" />
-            </a>
+          <div class="container">
+            <p>
+              🎉 Free Delivery on orders over 500tk | Call: +880 1234 567 890
+            </p>
           </div>
-          <button type="button" class="menu-toggle" id="mobile-menu">
-            <i class="fas fa-bars"></i>
-          </button>
-          <nav class="navbar">
-            <ul>
-              <li><a href="index.html" class="active">Home</a></li>
-              <li><a href="#categories">Categories</a></li>
-              <li><a href="#products">Products</a></li>
-            </ul>
-          </nav>
-
-          <div class="header-actions">
-            <a href="#"><i class="fas fa-search"></i></a>
-            <div class="cart-icon">
-              <a href="#">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="badge">3</span>
+        </div>
+        <header class="header">
+          <div class="container">
+            <div class="logo">
+              <a href="index.html">
+                <img src="./assets/images/logo.png" alt="logo" />
               </a>
             </div>
+            <button type="button" class="menu-toggle" id="mobile-menu">
+              <i class="fas fa-bars"></i>
+            </button>
+            <nav class="navbar">
+              <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="category.html">Categories</a></li>
+                <li><a href="product.html">Products</a></li>
+              </ul>
+            </nav>
+            <div class="header-actions">
+              <div class="search-box">
+                <form action="">
+                  <input
+                    type="text"
+                    class="search-input"
+                    placeholder="Search product..."
+                  />
+                  <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+              </div>
+              <button type="button" class="cart-btn" id="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge" id="cart-count">0</span>
+              </button>
+            </div>
           </div>
-        </div>
-      </header>
+        </header>
       <div class="category">
         <section class="page-header">
           <div class="container">
@@ -56,7 +64,7 @@
           </div>
         </section>
 
-        <section class="category" id="categories">
+        <section class="category category-page" id="categories">
           <div class="category-grid-section">
             <div class="container">
               <div class="category-wrapper">
@@ -99,51 +107,65 @@
           </div>
         </section>
       </div>
-      <footer class="footer">
-        <div class="container">
-          <div class="footer-row">
-            <div class="footer-col">
-              <h4>MashaAllah<span>Enterprise</span></h4>
-              <p>
-                Apnar nityo-proyojoniyo shob kichu paben eki jaygay. Quality
-                ar bhorosai amader mul lokkho.
-              </p>
-              <div class="social-links">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-youtube"></i></a>
+       <footer class="footer">
+          <div class="container">
+            <div class="footer-row">
+              <div class="footer-col">
+                <h4>MashaAllah<span>Enterprise</span></h4>
+                <p>Quality ar bhorosai amader mul lokkho.</p>
+                <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
               </div>
-            </div>
-            <div class="footer-col">
-              <h4>Quick Links</h4>
-              <ul>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Terms of Service</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>Newsletter</h4>
-              <p>Get the latest updates and offers.</p>
-              <div class="newsletter-form">
-                <input type="email" placeholder="Your Email" />
-                <button type="submit">Join</button>
+              <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="footer-col">
+                <h4>Newsletter</h4>
+                <div class="newsletter-form">
+                  <input type="email" placeholder="Your Email" />
+                  <button type="submit">Join</button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="footer-bottom">
-          <p>© 2026 MashaAllah Enterprise | Developed by ❤️</p>
-        </div>
-      </footer>
+          <div class="footer-bottom">
+            <p>&copy; 2026 MashaAllah Enterprise | Developed by ❤️</p>
+          </div>
+        </footer>
+      </div>
     </div>
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
 
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
-  <script src="./assets/js/script.js"></script>
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+      <div class="cart-header">
+        <h4>Shopping Cart</h4>
+        <i class="fas fa-times close-cart" id="close-cart"></i>
+      </div>
+      <div class="cart-items" id="cart-items-container">
+        <p class="empty-msg">Your cart is empty!</p>
+      </div>
+      <div class="cart-footer">
+        <div class="total-price">
+          <span>Total:</span>
+          <span id="cart-total">$0</span>
+        </div>
+        <button class="btn">Checkout</button>
+      </div>
+    </div>
+
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/gsap.min.js"></script>
+
+    <script src="./assets/js/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/ScrollSmoother.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>
