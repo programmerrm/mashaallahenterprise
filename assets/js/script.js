@@ -157,6 +157,27 @@ document.addEventListener("DOMContentLoaded", function () {
             delay: 0.2,
         },
     );
+    // Header Sticky Animation on Scroll
+    ScrollTrigger.create({
+        start: "top -100", // 100px scroll korar por trigger hobe
+        onUpdate: (self) => {
+            if (self.direction === 1) { // Niche scroll korle
+                gsap.to(".header", {
+                    backgroundColor: "rgba(255, 255, 255, 0.95)",
+                    padding: "10px 0", // Scroll korle header ektu choto hobe
+                    boxShadow: "0 5px 20px rgba(0,0,0,0.1)",
+                    duration: 0.3
+                });
+            } else { // Upore scroll korle (Normal state)
+                gsap.to(".header", {
+                    backgroundColor: "rgba(255, 255, 255, 0.9)",
+                    padding: "16px 0",
+                    boxShadow: "var(--shadow)",
+                    duration: 0.3
+                });
+            }
+        }
+    });
     navtl.fromTo(
         ".navbar ul li",
         {
@@ -327,5 +348,27 @@ document.addEventListener("DOMContentLoaded", function () {
         duration: 1,
         delay: 0.8,
         ease: "power2.out"
+    });
+
+    const scrollTopBtn = document.querySelector("#scrollTopBtn");
+
+    ScrollTrigger.create({
+        start: "top -500",
+        onUpdate: (self) => {
+            if (self.direction === 1) {
+                scrollTopBtn.classList.add("active");
+            } else if (self.scroll() < 500) {
+                scrollTopBtn.classList.remove("active");
+            }
+        }
+    });
+
+    scrollTopBtn.addEventListener("click", () => {
+
+        if (typeof smoother !== 'undefined') {
+            smoother.scrollTo(0, true, "power2.inOut");
+        } else {
+            gsap.to(window, { scrollTo: 0, duration: 1, ease: "power2.inOut" });
+        }
     });
 });
