@@ -127,11 +127,11 @@ document.addEventListener("DOMContentLoaded", function () {
     let smoother = ScrollSmoother.create({
         wrapper: "#smooth-wrapper",
         content: "#smooth-content",
-        smooth: 1.5,
+        smooth: 5,
         effects: true,
         smoothTouch: 0.1,
     });
-    tl.fromTo(
+    gsap.fromTo(
         ".top-bar",
         {
             y: -50,
@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
             delay: 0.2,
         },
     );
-    tl.fromTo(
+    gsap.fromTo(
         ".header",
         {
             y: -50,
@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", function () {
             stagger: 0.2,
         },
     );
-    tl.fromTo(
+    gsap.fromTo(
         ".hero-slider",
         {
             y: -50,
@@ -243,6 +243,20 @@ document.addEventListener("DOMContentLoaded", function () {
         opacity: 0,
         duration: 1.2,
         ease: "power3.out"
+    });
+    gsap.from(".service-card", {
+        scrollTrigger: {
+            trigger: ".services-section",
+            start: "top 80%",
+            end: "top 20%",
+            scrub: 1,
+            toggleActions: "play none none none",
+        },
+        y: -100,
+        opacity: 0,
+        duration: 1.5,
+        stagger: 0.3,
+        ease: "power2.out"
     });
     gsap.from(".footer-col", {
         scrollTrigger: {

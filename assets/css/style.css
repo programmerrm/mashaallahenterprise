@@ -35,7 +35,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all linear 0.3s;
 }
 
 body {
@@ -44,7 +43,6 @@ body {
   background: var(--white);
   font-size: var(--base-size);
   line-height: var(--base-lh);
-  scroll-behavior: smooth;
 }
 
 h1,
@@ -138,6 +136,9 @@ img {
 
 .btn:hover {
   background: var(--secondary);
+}
+a, button, .category-item, .product-card, .search-input {
+    transition: all 0.3s ease-in-out;
 }
 
 /* Top Bar */
@@ -250,6 +251,7 @@ img {
 .cart-btn:hover {
   color: var(--primary);
 }
+
 /* Add these at the bottom of your CSS file */
 
 /* Cart Item Styling */
@@ -293,8 +295,8 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.5);
   z-index: 1500;
   display: none;
@@ -366,6 +368,7 @@ img {
   transform: translateY(-10px);
   border-color: var(--primary);
 }
+
 .category-item {
   transition: none !important;
 }
@@ -513,6 +516,7 @@ img {
   background: var(--secondary);
   color: var(--white);
 }
+
 .product-card {
   transition: none !important;
 }
@@ -609,6 +613,10 @@ img {
 
 .service-card p {
   font-size: 14px;
+}
+
+.service-card {
+  transition: none !important;
 }
 
 /* Footer */
@@ -716,14 +724,18 @@ img {
 .cart-sidebar {
   position: fixed;
   top: 0;
+  bottom: 0;
   right: -100%;
   width: 300px;
-  height: 100%;
+  height: 100vh;
   background: var(--white);
   box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
   z-index: 2000;
   padding: 20px;
   transition: 0.4s;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .cart-sidebar.active {
@@ -742,6 +754,25 @@ img {
 .close-cart {
   cursor: pointer;
   font-size: 20px;
+}
+
+.cart-sidebar .total-price {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.cart-sidebar .btn {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-sidebar .cart-footer {
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
 }
 
 /* Responsive Breakpoints */
@@ -770,6 +801,9 @@ img {
     height: 100vh;
     transition: 0.4s;
     z-index: 999;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
   }
 
   .navbar.active {
