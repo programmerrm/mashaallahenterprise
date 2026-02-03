@@ -143,6 +143,10 @@ button {
   transition: all 0.3s linear;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 
 /* Scroll to Top Button Styling */
 .scroll-to-top {
