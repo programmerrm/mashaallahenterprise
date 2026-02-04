@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MashaAllah Enterprise || single</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+
+<body>
+    <button class="scroll-to-top" id="scrollTopBtn">
+        <i class="fas fa-arrow-up"></i> <span class="progress-circle"></span>
+    </button>
+
+    <div class="smooth-wrapper">
+        <div class="smooth-content">
+            <div class="top-bar">
+                <div class="container">
+                    <p>
+                        🎉 Free Delivery on orders over 500tk | Call: +880 1234 567 890
+                    </p>
+                </div>
+            </div>
+            <header class="header">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="./assets/images/logo.png" alt="logo" />
+                        </a>
+                    </div>
+                    <button type="button" class="menu-toggle" id="mobile-menu">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <nav class="navbar">
+                        <ul>
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="category.html">Categories</a></li>
+                            <li><a href="product.html">Products</a></li>
+                        </ul>
+                    </nav>
+                    <div class="header-actions">
+                        <div class="search-box">
+                            <form action="">
+                                <input type="text" class="search-input" placeholder="Search product..." />
+                                <button class="search-btn">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <button type="button" class="cart-btn" id="cart-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge" id="cart-count">0</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+
+            <section class="single-product-section">
+                <div class="container">
+                    <div class="product-layout">
+                        <div class="product-gallery">
+                            <div class="main-image-container">
+                                <img src="../assets/images/product1.png"  alt="Logitech G-Series">
+                            </div>
+                            <div class="thumbnail-group">
+                                <img src="thumb1.jpg" class="thumb active">
+                                <img src="thumb2.jpg" class="thumb">
+                                <img src="thumb3.jpg" class="thumb">
+                            </div>
+                        </div>
+
+                        <div class="product-content">
+                            <h1 class="product-title">Logitech G-Series Wireless Mouse</h1>
+
+                            <div class="rating">
+                                <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                    class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                <span>(124 Customer Reviews)</span>
+                            </div>
+
+                            <div class="price-tag">
+                                <span class="curr-price">$75.00</span>
+                                <span class="old-price">$99.00</span>
+                                <span class="discount">-25% OFF</span>
+                            </div>
+
+                            <p class="short-info">The ultimate tool for pro-gamers. Light-speed wireless technology
+                                with
+                                zero latency and 25k DPI sensor.</p>
+
+                            <div class="options">
+                                <div class="qty-selector">
+                                    <span>Quantity:</span>
+                                    <div class="qty-controls">
+                                        <button>-</button>
+                                        <input type="number" id="qty" value="1" readonly>
+                                        <button>+</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="action-buttons">
+                                <button class="btn"><i class="fas fa-shopping-cart"></i> Add to Cart</button>
+                                <button class="wishlist"><i class="far fa-heart"></i></button>
+                            </div>
+
+                            <div class="meta-info">
+                                <p><strong>Category:</strong> t shirt</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-tabs">
+                        <h3>Description</h3>
+                        <p>Detailed description of the mouse goes here. Focus on the HERO sensor and battery
+                            life.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer-row">
+                        <div class="footer-col">
+                            <h4>MashaAllah<span>Enterprise</span></h4>
+                            <p>Quality ar bhorosai amader mul lokkho.</p>
+                            <div class="social-links">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Quick Links</h4>
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Newsletter</h4>
+                            <div class="newsletter-form">
+                                <input type="email" placeholder="Your Email" />
+                                <button type="submit">Join</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 MashaAllah Enterprise | Developed by ❤️</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h4>Shopping Cart</h4>
+            <i class="fas fa-times close-cart" id="close-cart"></i>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <p class="empty-msg">Your cart is empty!</p>
+        </div>
+        <div class="cart-footer">
+            <div class="total-price">
+                <span>Total:</span>
+                <span id="cart-total">$0</span>
+            </div>
+            <button class="btn">Checkout</button>
+        </div>
+    </div>
+
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/gsap.min.js"></script>
+
+    <script src="./assets/js/ScrollTrigger.min.js"></script>
+    <script src="./assets/js/ScrollSmoother.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

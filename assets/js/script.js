@@ -371,4 +371,13 @@ document.addEventListener("DOMContentLoaded", function () {
             gsap.to(window, { scrollTo: 0, duration: 1, ease: "power2.inOut" });
         }
     });
+
+    gsap.from(".product-gallery", { opacity: 0, x: -50, duration: 1 });
+    gsap.from(".product-content > *", {
+        opacity: 0,
+        y: 20,
+        stagger: 0.1,
+        duration: 0.8,
+        ease: "power2.out"
+    });
 });

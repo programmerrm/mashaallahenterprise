@@ -142,6 +142,10 @@ a,
 button {
   transition: all 0.3s linear;
 }
+button{
+  border: none;
+  cursor: pointer;
+}
 
 .overflow-hidden {
   overflow: hidden;
@@ -560,6 +564,7 @@ button {
   background: var(--bg);
   position: relative;
   overflow: hidden;
+  display: block;
 }
 
 .product-tumb img {
@@ -716,6 +721,103 @@ button {
   font-size: 14px;
 }
 
+/*  */
+.single-product-section{
+  padding: 80px 0;
+  background: var(--bg);
+}
+
+.single-product {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.thumbnail-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.thumb {
+  width: 70px;
+  height: 70px;
+  border: 2px solid var(--border-color);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s linear;
+}
+
+.thumb.active {
+  border-color: var(--primary);
+}
+
+.price-tag {
+  margin: 20px 0;
+}
+.short-info{
+  margin-bottom: 8px;
+}
+
+.curr-price {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--secondary);
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: var(--text-muted);
+  margin-left: 10px;
+}
+
+.qty-controls {
+  display: flex;
+  border: 1px solid var(--border-color);
+  width: fit-content;
+  border-radius: var(--radius);
+}
+
+.qty-controls button {
+  padding: 10px 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.qty-controls input {
+  width: 40px;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  outline: none;
+  border-right: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 30px;
+  align-items: center;
+}
+.wishlist{
+  --size: 42px;
+  width: var(--size);
+  height: var(--size);
+}
+.meta-info{
+  margin-top: 8px;
+}
+.product-tabs{
+  margin-top: 40px;
+}
 /* Footer */
 .footer {
   background: var(--secondary);
@@ -893,6 +995,10 @@ button {
   .testimonial-section {
     padding: 32px 0;
   }
+  .product-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
 
   .footer {
     padding: 40px 0 0;
