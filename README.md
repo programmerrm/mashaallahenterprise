@@ -1,4 +1,6 @@
-# MashaAllah Enterprise
+# Project Name
+
+- MashaAllah Enterprise
 
 # Description
 
@@ -72,16 +74,25 @@ MashaAllah Enterprise is a modern and high-performance E-Commerce web applicatio
     - env\Scripts\activate
 
 ### Linux / Mac
-    - python3 -m venv env
-    - source env/bin/activate
+    python3 -m venv env
+    source env/bin/activate
 
-- pip install -r requirements.txt
-- python manage.py makemigrations
-- python manage.py migrate
-- python manage.py createsuperuser
-- python manage.py runserver
-- http://127.0.0.1:8000/
-- http://127.0.0.1:8000/admin
+### Install Dependencies
+    pip install -r requirements.txt
+
+### Database Migration
+    python manage.py makemigrations
+    python manage.py migrate
+
+### Create Admin User
+    python manage.py createsuperuser
+
+### Run Development Server
+    python manage.py runserver
+
+### Access Project
+    http://127.0.0.1:8000/
+    http://127.0.0.1:8000/admin
 
 # Author
 
