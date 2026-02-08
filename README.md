@@ -1,6 +1,6 @@
 # Project Name
 
-- MashaAllah Enterprise
+MashaAllah Enterprise
 
 # Description
 
