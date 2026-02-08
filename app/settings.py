@@ -1,16 +1,25 @@
+import environ
 from pathlib import Path
 
 # BASE DIR
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-8lz1ne2q-v5qb-y^dmz!b+o+#2-0_a@7=57y$55h3u-*ec4%l-'
+# ENV SETUP
+env = environ.Env(
+    DEBUG=(bool, False)
+)
+
+# LOAD .env file
+environ.Env.read_env(BASE_DIR / ".env")
+
+# SECURITY KEY
+SECRET_KEY = env('SECRET_KEY')
 
 # DEBUG
-DEBUG = True
+DEBUG = env('DEBUG')
 
 # ALLOWED HOSTS
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = env.list('ALLOWED_HOSTS', default=['*'])
 
 # INSTALLED APPS
 INSTALLED_APPS = [
@@ -93,3 +102,16 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# EMAIL CONFIGRATION
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = env('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = env('EMAIL_PASSWORD')
+DEFAULT_FROM_EMAIL = env('DEFAULT_FROM_EMAIL', default=env('EMAIL_HOST_USER'))
+SITE_ADMIN_EMAIL = env('SITE_ADMIN_EMAIL')
+
+# DOMAIN NAME
+DOMAIN_NAME = env('DOMAIN_NAME')

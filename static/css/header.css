@@ -1,0 +1,132 @@
+/* Header */
+
+.header {
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 16px 0;
+    box-shadow: var(--shadow);
+    transition: none !important;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 50px;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li a {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 600;
+    color: var(--secondary);
+    padding: 8px 20px;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    color: var(--primary);
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+/* Search Box */
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: var(--bg-main);
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    font-family: var(--font-plus);
+    font-size: 14px;
+}
+
+.search-box:hover .search-input,
+.search-input:focus {
+    width: 200px;
+    padding: 8px 14px;
+    border: 1px solid var(--border-color);
+    margin-right: 6px;
+}
+
+.search-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: var(--secondary);
+    cursor: pointer;
+    padding: 6px;
+}
+
+.search-btn:hover {
+    color: var(--primary);
+}
+
+/* Cart Button & Sidebar */
+.cart-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: var(--secondary);
+    cursor: pointer;
+    position: relative;
+    padding: 6px;
+}
+
+.cart-btn:hover {
+    color: var(--primary);
+}
+
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: -100%;
+    width: 300px;
+    height: 100vh;
+    background: var(--white);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    z-index: 2000;
+    padding: 20px;
+    transition: all 0.4s linear;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-sidebar.active {
+    right: 0 !important;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+}
+
+.close-cart {
+    cursor: pointer;
+    font-size: 20px;
+}

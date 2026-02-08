@@ -3,6 +3,40 @@
 {% block title %}
     MashaAllah Enterprise | Premium Ecommerce
 {% endblock title %}
+{% block css_link %}
+    <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/all.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/header.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/footer.css' %}" />
+{% endblock css_link %}
 {% block full_content %}
-    <h2>MashaAllah Enterprise | Premium Ecommerce</h2>
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h4>Shopping Cart</h4>
+            <i class="fas fa-times close-cart" id="close-cart"></i>
+        </div>
+        <div class="cart-items" id="cart-items-container">
+            <p class="empty-msg">Your cart is empty!</p>
+        </div>
+        <div class="cart-footer">
+            <div class="total-price">
+                <span>Total:</span>
+                <span id="cart-total">$0</span>
+            </div>
+        <button class="btn" type="button">Checkout</button>
+        </div>
+    </div>
+    <div class="smooth-wrapper">
+        <div class="smooth-content">
+            {% include '../components/header.html' %}
+            {% include '../components/footer.html' %}
+        </div>
+    </div>
 {% endblock full_content %}
+{% block js_link %}
+    <script src="{% static 'js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'js/gsap.min.js' %}"></script>
+    <script src="{% static 'js/ScrollTrigger.min.js' %}"></script>
+    <script src="{% static 'js/ScrollSmoother.min.js' %}"></script>
+{% endblock js_link %}
