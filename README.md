@@ -63,10 +63,6 @@ MashaAllah Enterprise is a modern and high-performance E-Commerce web applicatio
     ├── manage.py
     └── requirements.txt
 
-```bash
-git clone https://github.com/programmerrm/mashaallahenterprise.git
-cd mashaallahenterprise
-
 # Installation
 
 - git clone https://github.com/programmerrm/mashaallahenterprise.git
