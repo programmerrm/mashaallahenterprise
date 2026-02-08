@@ -55,14 +55,22 @@ MashaAllah Enterprise is a modern and high-performance E-Commerce web applicatio
 # Installation
 
 - git clone https://github.com/programmerrm/mashaallahenterprise.git
-- python -m venv env
+
 ### Windows
-- env\Scripts\activate
+    - python -m venv env
+    - env\Scripts\activate
+    
 ### Linux / Mac
-- source env/bin/activate
+    - python3 -m venv env
+    - source env/bin/activate
 
 - pip install -r requirements.txt
+- python manage.py makemigrations
+- python manage.py migrate
+- python manage.py createsuperuser
 - python manage.py runserver
+- http://127.0.0.1:8000/
+- http://127.0.0.1:8000/admin
 
 # Author
 
