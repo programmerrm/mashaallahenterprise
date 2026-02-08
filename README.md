@@ -52,6 +52,21 @@ MashaAllah Enterprise is a modern and high-performance E-Commerce web applicatio
 ### Database
 - MySQL
 
+## Project Structure
+
+    MashaAllahEnterprise/
+    │
+    ├── static/
+    ├── templates/
+    ├── media/
+    ├── apps/
+    ├── manage.py
+    └── requirements.txt
+
+```bash
+git clone https://github.com/programmerrm/mashaallahenterprise.git
+cd mashaallahenterprise
+
 # Installation
 
 - git clone https://github.com/programmerrm/mashaallahenterprise.git
@@ -59,7 +74,7 @@ MashaAllah Enterprise is a modern and high-performance E-Commerce web applicatio
 ### Windows
     - python -m venv env
     - env\Scripts\activate
-    
+
 ### Linux / Mac
     - python3 -m venv env
     - source env/bin/activate
