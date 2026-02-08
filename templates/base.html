@@ -1,0 +1,21 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{% block title %}{% endblock title %}</title>
+  <link rel="stylesheet" href="{% static 'css/globals.css' %}" />
+  {% block css_link %}{% endblock css_link %}
+</head>
+
+<body>
+  <main>
+    {% block full_content %}{% endblock full_content %}
+  </main>
+  {% block js_link %}{% endblock js_link %}
+  <script src="{% static 'js/base.js' %}"></script>
+</body>
+
+</html>
